@@ -8,12 +8,14 @@ No jogo "Não Pode", você recebe uma **palavra principal** e deve explicá-la a
 
 ## ✨ Funcionalidades
 
-- 🃏 **20 cartas** com palavras variadas
+- 🃏 **230+ cartas** organizadas por categorias e dificuldade
+- 🎭 **Categorias variadas**: Lugares, Comidas, Animais, Objetos, Filmes, Internet, Música, Brasil e muito mais!
+- 📊 **Níveis de dificuldade**: Fácil, Médio, Difícil e Caótico
 - ⏱️ **Cronômetro configurável** (15s a 180s)
-- 🎨 **Interface limpa e intuitiva**
+- 🎨 **Interface moderna em tema escuro**
 - 📱 **Design responsivo** para mobile e desktop
 - 🔄 **Sistema de embaralhamento** - cartas não se repetem
-- 🎉 **Feedback visual** quando o tempo acaba
+- 🎉 **Feedback visual e vibração** quando o tempo acaba
 - 📖 **Tela de regras** completa
 
 ## 🚀 Como Executar
@@ -25,15 +27,15 @@ No jogo "Não Pode", você recebe uma **palavra principal** e deve explicá-la a
 
 ### Instalação
 
-\`\`\`bash
+```bash
 # Instale as dependências
 npm install
 
 # Inicie o servidor de desenvolvimento
 npm run dev
-\`\`\`
+```
 
-O jogo estará disponível em \`http://localhost:5173\`
+O jogo estará disponível em `http://localhost:5173`
 
 ## 🎮 Como Jogar
 
@@ -55,7 +57,7 @@ O jogo estará disponível em \`http://localhost:5173\`
 
 ## 📦 Estrutura do Projeto
 
-\`\`\`
+```
 src/
 ├── components/        # Componentes reutilizáveis
 │   ├── Button.tsx    # Botão customizado
@@ -71,41 +73,39 @@ src/
 │   └── Rules.tsx     # Regras do jogo
 ├── App.tsx           # Configuração de rotas
 └── main.tsx          # Entry point
-\`\`\`
+```
 
 ## 📝 Adicionar Novas Cartas
 
-Para adicionar mais cartas ao jogo, edite o arquivo \`src/data/cards.ts\`:
+Para adicionar mais cartas ao jogo, edite o arquivo `src/data/cards.ts`:
 
-\`\`\`typescript
+```typescript
 {
   word: "Sua Palavra",
   forbidden: ["proibida1", "proibida2", "proibida3", "proibida4", "proibida5"],
 }
-\`\`\`
+```
 
 ## 🚀 Build para Produção
 
-\`\`\`bash
+```bash
 # Criar build otimizado
 npm run build
 
 # Testar build localmente
 npm run preview
-\`\`\`
+```
 
-## �� Scripts Disponíveis
+## 📄 Scripts Disponíveis
 
-- \`npm run dev\` - Inicia servidor de desenvolvimento
-- \`npm run build\` - Cria build de produção
-- \`npm run preview\` - Preview do build de produção
-- \`npm run lint\` - Executa o linter
+- `npm run dev` - Inicia servidor de desenvolvimento
+- `npm run build` - Cria build de produção
+- `npm run preview` - Preview do build de produção
+- `npm run lint` - Executa o linter
 
 ## 🎯 Próximas Funcionalidades (Roadmap)
 
 - [ ] Sistema de pontuação
-- [ ] Modo escuro
-- [ ] Categorias de cartas
 - [ ] Baralhos personalizados
 - [ ] Efeitos sonoros
 - [ ] PWA (modo offline)
