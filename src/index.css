@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Cores */
+  --color-bg: #F9FAFB;
+  --color-card: #FFFFFF;
+  --color-text: #111827;
+  --color-danger: #EF4444;
+  --color-primary: #2563EB;
+  --color-accent: #FACC15;
+  --color-border: #E5E7EB;
+
+  /* Espaçamento */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Tipografia */
+  --font-family: 'Poppins', 'Inter', sans-serif;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 40px;
+  --font-size-xxl: 48px;
+
+  /* Bordas e sombras */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+  /* Animações */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+}
+
+[data-theme="dark"] {
+  --color-bg: #1F2937;
+  --color-card: #111827;
+  --color-text: #F9FAFB;
+  --color-border: #374151;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
